@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan Page</title>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="planPage">
+      <div class="d-lg-none d-flex justify-content-between">
+        <div class="w3-teal d-flex">
+          <button
+            class="w3-button mobilemenu mr-2 w3-xlarge"
+            onclick="w3_open()"
+          >
+            &#9776;
+          </button>
+          <div class="w3-container">
+            <h3 class="w3-bar-item">
+              <img src="images/image 1.png" alt="logo for fabits" />
+            </h3>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="mr-2">
+            <img
+              src="images/mobilenotification.png"
+              alt="notifications image"
+            />
+          </div>
+          <div>
+            <img src="images/account_circle.png" alt="profile image" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="w3-sidebar sidenav d-lg-block w3-collapse w3-card w3-animate-left d-none"
+        style="width: 25%"
+        id="mySidebar"
+      >
+        <div class="d-lg-flex justify-content-between d-none">
+          <div class="w3-container">
+            <h3 class="w3-bar-item">
+              <img src="images/image 1.png" alt="logo for fabits" />
+            </h3>
+          </div>
+          <div><img src="images/Frame 82.png" alt="notifications image" /></div>
+        </div>
+        <div class="profile">
+          <div>
+            <img class="mr-2" src="images/memoji.png" alt="profile image" />
+          </div>
+          <div class="mr-3">
+            <p class="smallNav my-0">Dhruv S</p>
+            <p class="my-0">dhruvs.gmail.com</p>
+          </div>
+          <div><img src="images/more_vert.png" alt="more info" /></div>
+        </div>
+        <div class="d-flex mt-5">
+          <div>
+            <img
+              class="mr-2 d-flex"
+              src="images/Tab Icons.png"
+              alt="home image"
+            />
+          </div>
+          <div class="smallNav">Home</div>
+        </div>
+        <div class="mt-5">
+          <p class="textchange">FINANCE</p>
+          <div class="d-flex my-3 p-2 align-items-center activeplan">
+            <div>
+              <img
+                class="mr-2 d-flex"
+                src="images/track_changes.png"
+                alt="home image"
+              />
+            </div>
+            <div>Pan a Goal</div>
+          </div>
+          <div class="d-flex my-3 align-items-center">
+            <div>
+              <img
+                class="mr-2 d-flex"
+                src="images/bubble_chart.png"
+                alt="home image"
+              />
+            </div>
+            <div>Discover Top Funds</div>
+          </div>
+          <div class="d-flex my-3 align-items-center">
+            <div>
+              <img
+                class="mr-2 d-flex"
+                src="images/real_estate_agent.png"
+                alt="home image"
+              />
+            </div>
+            <div>My Investments</div>
+          </div>
+        </div>
+        <div class="mt-5">
+          <p class="textchange">INSURENCE</p>
+          <div class="d-flex my-3 align-items-center">
+            <div>
+              <img
+                class="mr-2 d-flex"
+                src="images/Tab Icons (1).png"
+                alt="home image"
+              />
+            </div>
+            <div>Insurance</div>
+          </div>
+          <div class="d-flex my-3 align-items-center">
+            <div>
+              <img
+                class="mr-2 d-flex"
+                src="images/Tab Icons (2).png"
+                alt="home image"
+              />
+            </div>
+            <div>Insurance</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-container w3-teal mt-5">
+        <div class="verticalSection">
+          <div class="scrollcontainer">
+            <div class="setgoal">
+              <h3 class="mb-3">
+                what financial goal do you what to plan today?
+              </h3>
+              <p>Select a goal to start planning</p>
+            </div>
+            <button class="prevButton" id="left-arrow">
+              <span class="arrows d-flex"
+                ><img src="images/left.png" alt="arrow left"
+              /></span>
+            </button>
+            <div id="tabs-container" class="tabs-container" aria-label="group">
+              <div class="tab aui-tabtitle" tabindex="0">
+                <img
+                  class="mb-3"
+                  src="images/Group5.png"
+                  alt="image for retirement"
+                />
+                <span class="smallNav"> Retirement</span>
+                <p>Your old age is taken care off</p>
+              </div>
+              <div class="tab aui-tabtitle">
+                <img
+                  class="mb-3"
+                  src="images/Group5.png"
+                  alt="image for retirement"
+                />
+                <span class="smallNav"> Wedding</span>
+                <p>Plan your wedding</p>
+              </div>
+              <div class="tab aui-tabtitle">
+                <img
+                  class="mb-3"
+                  src="images/Group4.png"
+                  alt="image for retirement"
+                />
+                <span class="smallNav"> Retirement</span>
+                <p>Your old age is taken care off</p>
+              </div>
+              <div class="tab aui-tabtitle">
+                <img
+                  class="mb-3"
+                  src="images/Group3.png"
+                  alt="image for retirement"
+                />
+                <span class="smallNav"> Education</span>
+                <p>Build your carrer tensio-free</p>
+              </div>
+              <div class="tab aui-tabtitle">
+                <img
+                  class="mb-3"
+                  src="images/Group4.png"
+                  alt="image for retirement"
+                />
+                <span class="smallNav">Vacation</span>
+                <p>Never too late for Bahamas</p>
+              </div>
+              <div class="tab aui-tabtitle">
+                <img
+                  class="mb-3"
+                  src="images/Group3.png"
+                  alt="image for retirement"
+                />
+                <span class="smallNav">Emergency</span>
+                <p>Be perpared for everything</p>
+              </div>
+              <div class="tab aui-tabtitle">
+                <img
+                  class="mb-3"
+                  src="images/Group3.png"
+                  alt="image for retirement"
+                />
+                <span class="smallNav">Emergency</span>
+                <p>Be perpared for everything</p>
+              </div>
+            </div>
+            <button class="nextButton" id="right-arrow">
+              <span class="arrows d-flex"
+                ><img src="images/right.png" alt="arrow right"
+              /></span>
+            </button>
+          </div>
+          <!-- <div class="carousel"></div> -->
+        </div>
+        <div class="cardSection">
+          <div class="showcards mb-4">
+            <div class="cardtitle"><h3>Track Current Goals</h3></div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="mr-3 d-none d-lg-block d-md-block">
+                <p class="activecolor my-0">
+                  Fliters<span
+                    ><img src="images/filter_alt.png" alt="filter image"
+                  /></span>
+                </p>
+              </div>
+              <div
+                class="mr-3 d-none d-lg-block d-md-block"
+                aria-label="sortby"
+              >
+                Sort By: <span class="activecolor">Progress(High-Low)</span>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="searchinput"
+                  placeholder="Search"
+                  aria-label="search any item"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="cardContainer">
+            <div class="card">
+              <div class="circle">
+                <div class="heading">
+                  <span class="iconcolor"></span>
+                  <h4>Aman & Sana Vaction Plan</h4>
+                </div>
+                <div class="content">
+                  <div class="d-flex flex-row justify-content-between">
+                    <div>
+                      <span class="textchange"> Goal Progress </span>
+                      <p>$ 25,00,000</p>
+                    </div>
+                    <div>
+                      <span class="textchange"> Goal Amount</span>
+                      <p>$ 250000</p>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row justify-content-between">
+                    <div>
+                      <span class="textchange">Goal Date</span>
+                      <p>March 2025</p>
+                    </div>
+                    <div>
+                      <span class="textchange">Goal Health</span>
+                      <p class="health">
+                        <img
+                          class="mr-1"
+                          src="images/heart_check.png"
+                          alt="health status"
+                        />Excellent
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <label class="visually-hidden" for="formControlRange1"
+                    >Range Input Label</label
+                  >
+                  <input
+                    type="range"
+                    class="form-control-range"
+                    id="formControlRange1"
+                  />
+                </div>
+                <p class="health">On Track</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="circle">
+                <div class="heading">
+                  <span class="iconcolor"> </span>
+                  <h4>Aman & Sana Vaction Plan</h4>
+                </div>
+                <div class="content">
+                  <div class="d-flex flex-row justify-content-between">
+                    <div>
+                      <span class="textchange"> Goal Progress</span>
+                      <p>$ 25,00,000</p>
+                    </div>
+                    <div>
+                      <span class="textchange"> Goal Amount</span>
+                      <p>$ 250000</p>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row justify-content-between">
+                    <div>
+                      <span class="textchange">Goal Date</span>
+                      <p>March 2025</p>
+                    </div>
+                    <div>
+                      <span class="textchange">Goal Health</span>
+                      <p class="health">
+                        <img
+                          class="mr-1"
+                          src="images/heart_check.png"
+                          alt="health status"
+                        />Good
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <label
+                    class="visually-hidden"
+                    for="formControlRange2"
+                  ></label>
+                  <input
+                    type="range"
+                    class="form-control-range"
+                    id="formControlRange2"
+                  />
+                </div>
+                <p class="health">On Track</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="circle">
+                <div class="heading">
+                  <span class="iconcolor"> </span>
+                  <h4>Aman & Sana Vaction Plan</h4>
+                </div>
+                <div class="content">
+                  <div class="d-flex flex-row justify-content-between">
+                    <div>
+                      <span class="textchange"> Goal Progress</span>
+                      <p>$ 25,00,000</p>
+                    </div>
+                    <div>
+                      <span class="textchange"> Goal Amount</span>
+                      <p>$ 250000</p>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row justify-content-between">
+                    <div>
+                      <span class="textchange">Goal Date</span>
+                      <p>March 2025</p>
+                    </div>
+                    <div>
+                      <span class="textchange">Goal Health</span>
+                      <p class="health">
+                        <img
+                          class="mr-1"
+                          src="images/heart_minus.png"
+                          alt="health status"
+                        /><span class="warningrange ml-1">Weak</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <label
+                    class="visually-hidden"
+                    for="formControlRange3"
+                  ></label>
+                  <input
+                    type="range"
+                    class="form-control-range"
+                    id="formControlRange3"
+                  />
+                </div>
+                <p class="health">
+                  Goal behind by <span class="warningrange">2 months</span>
+                </p>
+                <p class="warningrange shade">
+                  <img src="images/emoji_objects.png" alt="warning icon" />
+                  <span class="warningrange"
+                    >Boost your goal to reach sooner</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="circle">
+                <div class="heading">
+                  <span class="iconcolor"> </span>
+                  <h4>Aman & Sana Vaction Plan</h4>
+                </div>
+                <div class="content">
+                  <div class="d-flex flex-row justify-content-between">
+                    <div>
+                      <span class="textchange"> Goal Progress</span>
+                      <p>$ 25,00,000</p>
+                    </div>
+                    <div>
+                      <span class="textchange"> Goal Amount</span>
+                      <p>$ 250000</p>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row justify-content-between">
+                    <div>
+                      <span class="textchange">Goal Date</span>
+                      <p>March 2025</p>
+                    </div>
+                    <div>
+                      <span class="textchange">Goal Health</span>
+                      <p class="health">
+                        <img
+                          class="mr-1"
+                          src="images/heart_check.png"
+                          alt="health status"
+                        />Excellent
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <label
+                    class="visually-hidden"
+                    for="formControlRange4"
+                  ></label>
+                  <input
+                    type="range"
+                    class="form-control-range"
+                    id="formControlRange4"
+                  />
+                </div>
+                <p class="health">On Track</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="circle">
+                <div class="heading">
+                  <span class="iconcolor"> </span>
+                  <h4>Aman & Sana Vaction Plan</h4>
+                </div>
+                <div class="content">
+                  <div class="d-flex flex-row justify-content-between">
+                    <div>
+                      <span class="textchange"> Goal Progress</span>
+                      <p>$ 25,00,000</p>
+                    </div>
+                    <div>
+                      <span class="textchange"> Goal Amount</span>
+                      <p>$ 250000</p>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row justify-content-between">
+                    <div>
+                      <span class="textchange">Goal Date</span>
+                      <p>March 2025</p>
+                    </div>
+                    <div>
+                      <span class="textchange">Goal Health</span>
+                      <p class="health">
+                        <img
+                          class="mr-1"
+                          src="images/heart_check.png"
+                          alt="health status"
+                        />Good
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <label
+                    class="visually-hidden"
+                    for="formControlRange5"
+                  ></label>
+                  <input
+                    type="range"
+                    class="form-control-range"
+                    id="formControlRange5"
+                  />
+                </div>
+                <p class="health">On Track</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

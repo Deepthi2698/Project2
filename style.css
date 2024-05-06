@@ -1,0 +1,258 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.planPage {
+  display: flex;
+  background-color: #f4f7fe;
+  overflow: hidden;
+  @media only screen and (max-width: 992px) {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+.w3-container.w3-teal {
+  overflow-x: auto;
+}
+
+.sidenav {
+  margin-right: 40px;
+  border-right: 2px solid #d3dbec;
+  padding: 20px;
+  @media only screen and (max-width: 992px) {
+    border: none;
+  }
+}
+.mobilemenu {
+  border: none;
+  background: none;
+}
+.arrows {
+  background-color: #eceef4;
+  border-radius: 30px;
+  padding: 5px;
+}
+.profile {
+  display: flex;
+  margin-top: 50px;
+  background-color: #e7edfc;
+  border-radius: 16px;
+  padding: 10px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.textchange {
+  color: #6e6e6e;
+  font-size: 12px;
+}
+.activeplan {
+  background-color: #e7edfc;
+  border-radius: 16px;
+  padding: 5px;
+  color: #41558d;
+}
+.activecolor {
+  color: #41558d;
+  font-weight: 500;
+}
+
+.verticalSection {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 17px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  @media only screen and (max-width: 576px) {
+    padding: 15px;
+  }
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.tabs-container {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  @media only screen and (max-width: 992px) {
+    overflow-x: scroll;
+  }
+}
+
+.tab {
+  flex: 0 0 auto;
+  padding: 0.75em 1.25em;
+  cursor: pointer;
+  border-radius: 16px;
+  width: 160px;
+  height: 160px;
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+  }
+}
+.active-tab {
+  border: 1px solid #d3dbec;
+  box-shadow: 0px 4px 4px rgba(36, 47, 78, 0.12);
+}
+.setgoal {
+  display: flex;
+  flex-direction: column;
+  max-width: 25%;
+  @media only screen and (max-width: 992px) {
+    max-width: 100%;
+  }
+}
+.disabled {
+  display: block;
+}
+
+.smallNav {
+  font-weight: 600;
+  display: flex;
+}
+.scrollleftright {
+  display: flex !important;
+  align-items: center;
+  margin-left: 3.1875em;
+}
+.scrollcontainer {
+  display: flex !important;
+  @media only screen and (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 24px;
+  background-color: rgb(237, 237, 237);
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.prevButton {
+  left: 0;
+  position: relative;
+  border: none;
+  background: none;
+  @media only screen and (max-width: 992px) {
+    display: none !important;
+  }
+}
+
+.nextButton {
+  right: 0;
+  position: relative;
+  border: none;
+  background: none;
+  @media only screen and (max-width: 992px) {
+    display: none !important;
+  }
+}
+
+/* Styles for card section */
+.cardSection {
+  flex: 1;
+  border: 1px solid #d3dbec;
+  padding: 35px;
+  border-radius: 17px;
+  background-color: #fff;
+  @media only screen and (max-width: 576px) {
+    padding: 15px;
+  }
+}
+.cardtitle {
+  @media only screen and (max-width: 992px) {
+    margin-bottom: 15px;
+  }
+}
+
+.cardContainer {
+  display: grid;
+  border-top: 1px solid #d3dbec;
+  align-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+  align-items: start;
+  justify-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 420px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 17px !important;
+  transition: box-shadow 0.3s ease;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #d3dbec;
+}
+
+.card:hover {
+  box-shadow: 0px 4px 4px rgba(36, 47, 78, 0.12);
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid #d3dbec;
+  padding-bottom: 15px;
+}
+
+.iconcolor {
+  display: flex;
+  height: 52px;
+  width: 72px;
+  justify-content: center;
+  margin-right: 10px;
+  background-color: #d9d9d9;
+  border-radius: 8px;
+}
+
+.content {
+  margin-top: 15px;
+  display: block;
+  border-bottom: 0.5px solid #d3dbec;
+}
+
+.health {
+  color: green;
+}
+.warningrange {
+  color: #d99e16;
+}
+.searchinput {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #d3dbec;
+}
+.shade {
+  background-color: #fdf7e8;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.showcards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media only screen and (max-width: 992px) {
+    flex-direction: column;
+    align-items: start;
+  }
+}
